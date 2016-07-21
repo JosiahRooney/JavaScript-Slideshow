@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slideshow</title>
+
+
+
+
+
+	<!-- the necessary javascript file -->
+	<!-- make sure to change this path if you need to, ie: src="./js/slideshow.js" -->
+	<script src="slideshow.js"></script>
+
+
+	<!-- In this script tag we initialize the slideshow object. You can use slideshow_js.stop() to stop the show and slideshow_js.init() again to restart it. -->
+	<script>
+	
+		// Initialize the slideshow
+		slideshow_js.init(
+
+			// Add your images here
+			[
+				'images/1.jpg',
+				'images/2.jpg',
+				'images/3.jpg',
+				'images/4.jpg',
+				'images/5.jpg'
+			],
+
+			// Enter the selector of the slideshow element here, in this case it points to the div with ID of #slideshow_js
+			'#slideshow_js',
+
+			// Enter the duration each slide appears on the screen here
+			6000
+
+			);
+
+	</script>
+
+
+
+	<!-- Some basic styles to give the slideshow div a height and width and center it on the page. Remove margin: auto to no longer center it if you prefer -->
+	<style>
+		#slideshow_js {
+			height: 400px;
+			width: 640px;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+
+
+
+
+	<!-- This div displays the slideshow -->
+	<div id="slideshow_js"></div>
+
+
+
+
+
+</body>
+</html>
